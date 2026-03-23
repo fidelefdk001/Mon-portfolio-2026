@@ -67,7 +67,51 @@ a.active{
 a.active::after{
     width: 100%;
 }
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 1rem;
+    
+}
+.hero img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover ;
+    border: 8px solid var(--violet-doux);
+    
+}
 
+.hero h1{
+    font-size: 4rem;
+    color: var(--violet-doux);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+.hero a{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--violet-doux);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.hero a:hover{
+    background-color: var(--violet-fonce);
+    transform: translateY(-4px);
+}
+.hero p{
+    font-size: 1.1rem;
+    color: var(--gris-fonce);
+}
 body{
     background-color: var(--gris-tres-clair);
     font-family: Roboto, sans-serif;
