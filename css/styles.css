@@ -117,5 +117,60 @@ body{
     font-family: Roboto, sans-serif;
     line-height: 1.6;
 }
+.apropos{
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+
+}
+.apropos h2{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+}
+.apropos h2::after{
+    content: "";
+    display: block;
+    width: 700;
+    height: 5px;
+    background-color: var(--violet-doux);
+    margin: 1rem auto;
+    border-radius: 2px;
+
+}
+.apropos p{
+    margin-bottom: 2rem;
+    color: var(--violet-fonce);
+    font-size: 1.2rem;
+}
+.apropos{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.competences h2{
+    color:var(--violet-doux);
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+
+
+}
+
+.competences h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 2rem auto;
+    border-radius: 3px;
+
+
+}
 
 
