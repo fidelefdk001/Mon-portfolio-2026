@@ -121,6 +121,8 @@ body{
     width: 800px;
     margin: 6rem auto;
     text-align: center;
+    color: var(--text-gray);
+    font-size: 1.1rem;
 
 }
 .apropos h2{
@@ -132,10 +134,10 @@ body{
 .apropos h2::after{
     content: "";
     display: block;
-    width: 700;
-    height: 5px;
+    width: 60px;
+    height: 4px;
     background-color: var(--violet-doux);
-    margin: 1rem auto;
+    margin: 1.2rem auto;
     border-radius: 2px;
 
 }
@@ -144,16 +146,11 @@ body{
     color: var(--violet-fonce);
     font-size: 1.2rem;
 }
-.apropos{
-    width: 800px;
-    margin: auto;
-    text-align: center;
 
-}
 
-.competences h2{
+section h2{
     color:var(--violet-doux);
-    font-size: 3rem;
+    font-size: 2em;
     font-weight: 700;
     position: relative;
     text-align: center;
@@ -161,16 +158,81 @@ body{
 
 }
 
-.competences h2::after{
+section h2::after{
     content: "";
     display: block;
-    width: 70px;
+    width: 60px;
     height: 4px;
     background-color: var(--violet-doux);
-    margin: 2rem auto;
-    border-radius: 3px;
+    margin: 1.2rem auto;
+    border-radius: 2px;
 
 
 }
 
+.competences table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.competences table  th , .competences table td {
+   padding: 8px;
+    
+
+
+}
+.competences table thead{
+    background-color: var(--violet-doux);
+    color: #fff;
+    text-transform: uppercase;
+    
+
+
+}
+.competences table tbody td{
+    border-bottom: 1px solid var(--gris-claire);
+
+}
+.competences table tbody tr:nth-child(even){
+    background-color: #fdfdfd;
+    
+}
+.competences table tbody tr{
+    transition: background-color 0.3s ease;
+
+}
+.competences table tbody tr:hover{
+    background-color: #f0f0f0;
+
+}
+
+.competences table thead th{
+    text-align: left;
+}
+
+footer{
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    padding: 3rem 0;
+    text-align: center;
+
+}
+footer p {
+    color: white;
+    margin-bottom: 1.3rem;
+}
+footer a {
+    display: inline;
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 0 10px;
+    transition: color 0.3s ease, tranform 0.2 ease;
+}
+footer a:hover{
+    color: var(--orange-vif);
+    transform: translate(-3px);
+
+}
 
