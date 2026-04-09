@@ -249,6 +249,10 @@ footer a:hover{
     margin-top: 4rem;
     text-align: left; 
 }
+.projets > div > div:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
 .projets > div > div {
     background-color: white;
     border-radius: 8px;
@@ -316,3 +320,136 @@ footer a:hover{
     color: var(--gris-fonce);
 }
 
+
+
+
+/* =========================================
+   PAGE CONTACT
+   ========================================= */
+.contact-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 6rem auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Même ombre que tes projets */
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--gris-fonce);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur petit écran */
+}
+
+/* Partie gauche : Les infos */
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--violet-doux);
+    background-color: var(--gris-tres-clair);
+    padding: 15px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-item p {
+    color: var(--gris-tres-fonce);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Partie droite : Le formulaire */
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: var(--violet-fonce);
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid var(--gris-claire);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--violet-doux); /* Effet sympa quand on clique dans le champ */
+}
+
+/* Bouton envoyer (ressemble à ton bouton d'accueil) */
+.btn-envoyer {
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start; /* Empêche le bouton de prendre toute la largeur */
+    margin-top: 1rem;
+}
+
+.btn-envoyer:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+/* Style naturel pour les liens WhatsApp et Telegram */
+.lien-reseau {
+    color: var(--gris-tres-fonce);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.lien-reseau:hover {
+    color: var(--violet-doux);
+}
