@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Mon portfolio</title>
+    <title>Mes Passions - Mon portfolio</title>
 </head>
-
 <body>
     <header>
-
         <div>
-            <h3><a href="#">Mon portfolio</a></h3>
+            <h3><a href="index.html">Mon portfolio</a></h3>
         </div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
-                <li><a href="passions.html"class="active">passions</a></li>
-                <li><a href="divertissements.html">divertissement</a></li>
+                <li><a href="passions.html" class="active">Passions</a></li>
+                <li><a href="divertissements.html">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
+
     <main>
-        <h1>Contactez-nous</h1>
+        <section class="interests-section">
+            <h2>Ce qui m'anime</h2>
+            <p class="section-subtitle">Découvrez les domaines qui me passionnent au quotidien.</p>
+
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-image-wrapper">
+                        <img src="img/passion1.jpg" alt="Développement Web">
+                    </div>
+                    <div class="interest-content">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Le Code & le Web</h3>
+                        <p>J'adore donner vie à des maquettes statiques. Chercher le bug, optimiser le code et découvrir de nouveaux frameworks comme Laravel est pour moi une vraie source de motivation.</p>
+                    </div>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-image-wrapper">
+                        <img src="img/passion2.jpg" alt="Intelligence Artificielle">
+                    </div>
+                    <div class="interest-content">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>L'Intelligence Artificielle</h3>
+                        <p>Je suis fasciné par la façon dont l'IA évolue. J'aime me documenter sur les nouveaux modèles, comprendre leur fonctionnement et imaginer comment les intégrer dans des projets web.</p>
+                    </div>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-image-wrapper">
+                        <img src="img/passion3.jpg" alt="Design Graphique">
+                    </div>
+                    <div class="interest-content">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h3>Le Design UI/UX</h3>
+                        <p>L'expérience utilisateur est primordiale. J'aime passer du temps sur Figma pour prototyper des interfaces épurées, choisir les bonnes couleurs et rendre la navigation intuitive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>

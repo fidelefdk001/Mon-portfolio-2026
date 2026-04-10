@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Mon portfolio</title>
+    <title>Divertissements - Mon portfolio</title>
 </head>
-
 <body>
     <header>
-
         <div>
-            <h3><a href="#">Mon portfolio</a></h3>
+            <h3><a href="index.html">Mon portfolio</a></h3>
         </div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
-                <li><a href="passions.html">passions</a></li>
-                <li><a href="divertissements.html"class="active">divertissement</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissements.html" class="active">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <main>
-        <h1>Contactez-nous</h1>
+ <main>
+        <section class="hobbies-section">
+            <h2>Mes moments de détente</h2>
+            <p class="section-subtitle">Parce qu'il faut bien déconnecter, voici comment je recharge mes batteries.</p>
+
+            <div class="hobbies-container">
+                <div class="hobby-row">
+                    <div class="hobby-image-wrapper">
+                        <img src="img/divertissement1.jpg" alt="Jeux Vidéo">
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h3>Gaming & Stratégie</h3>
+                        <p>Rien de tel qu'une bonne session de jeu vidéo pour décompresser. J'apprécie particulièrement les jeux de stratégie et de logique qui continuent de stimuler la réflexion, mais d'une manière totalement différente du code.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-row reversed">
+                    <div class="hobby-image-wrapper">
+                        <img src="img/divertissement2.jpg" alt="Musique">
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                        </div>
+                        <h3>Musique </h3>
+                        <p>La musique m'accompagne partout. J'écoute beaucoup de Lo-Fi et de musiques d'ambiance, c'est ma bande-son idéale pour rester concentré pendant mes longues sessions de programmation ou simplement m'évader.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-row">
+                    <div class="hobby-image-wrapper">
+                        <img src="img/divertissement3.jpg" alt="Sport">
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <h3>Sport & Nature</h3>
+                        <p>Pour contrer les heures passées assis devant l'écran, j'aime m'aérer l'esprit. Le sport et les petites balades me permettent de garder un bon équilibre physique et mental, indispensable pour la créativité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
     <footer>
         <p>© 2026 Fidèle Assani. Tous droits réservés.</p>
         <div>

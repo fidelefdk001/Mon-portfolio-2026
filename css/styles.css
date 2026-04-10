@@ -453,3 +453,229 @@ footer a:hover{
 .lien-reseau:hover {
     color: var(--violet-doux);
 }
+
+
+/* =========================================
+   PAGES PASSIONS & DIVERTISSEMENTS (EDITION LÉGENDAIRE)
+   ========================================= */
+
+/* =========================================
+   PAGE DIVERTISSEMENTS (DESIGN ZIG-ZAG)
+   ========================================= */
+.hobbies-section {
+    width: 85%;
+    max-width: 1000px; /* Un peu plus resserré pour un effet lecture agréable */
+    margin: 6rem auto;
+    text-align: center;
+}
+
+.hobbies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Grand espace entre chaque ligne pour respirer */
+}
+
+/* Ligne horizontale */
+.hobby-row {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 24px; /* Bords très arrondis, très moderne */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0,0,0,0.02);
+    text-align: left;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* La magie de l'alternance : inverse la direction pour les éléments "reversed" */
+.hobby-row.reversed {
+    flex-direction: row-reverse;
+}
+
+.hobby-row:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(108, 92, 231, 0.12);
+}
+
+/* Conteneur image */
+.hobby-image-wrapper {
+    flex: 1; /* Prend la moitié de la largeur */
+    height: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.hobby-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.hobby-row:hover .hobby-image-wrapper img {
+    transform: scale(1.08); /* Effet zoom subtil */
+}
+
+/* Conteneur texte */
+.hobby-content {
+    flex: 1.2; /* Le texte prend légèrement plus de place que l'image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* L'icône façon App iOS */
+.hobby-icon {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, var(--violet-doux), #8e7dfa);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px; /* Carré arrondi */
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 15px rgba(108, 92, 231, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.hobby-row:hover .hobby-icon {
+    transform: scale(1.1) rotate(-5deg); /* Petite animation fun */
+}
+
+.hobby-content h3 {
+    color: var(--gris-tres-fonce);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.hobby-content p {
+    color: var(--gris-fonce);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Responsive : sur téléphone, on remet tout l'un en dessous de l'autre */
+@media (max-width: 768px) {
+    .hobby-row, .hobby-row.reversed {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+    
+    .hobby-content {
+        align-items: center; /* Centre l'icône sur mobile */
+    }
+    
+    .hobby-image-wrapper {
+        width: 100%;
+        height: 220px;
+    }
+}
+.interests-section {
+    width: 85%;
+    max-width: 1100px;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: var(--gris-fonce);
+    font-size: 1.1rem;
+    margin-top: -10px;
+    margin-bottom: 4rem;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    text-align: left;
+}
+
+/* --- Design de la carte --- */
+.interest-card {
+    background-color: white;
+    border-radius: 16px; /* Bords un peu plus arrondis pour le côté moderne */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    /* Courbe d'animation premium (effet léger rebond) */
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.interest-card:hover {
+    transform: translateY(-12px);
+    /* Ombre teintée avec ta couleur principale au survol */
+    box-shadow: 0 20px 40px rgba(108, 92, 231, 0.15); 
+}
+
+/* --- Conteneur d'image pour le zoom interne --- */
+.interest-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden; /* Empêche l'image de déborder quand elle zoome */
+}
+
+.interest-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease; /* Transition douce pour l'image */
+}
+
+/* Le fameux zoom au survol de la carte */
+.interest-card:hover img {
+    transform: scale(1.1);
+}
+
+/* --- Contenu texte --- */
+.interest-content {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    position: relative;
+    background: white;
+}
+
+/* --- Icône flottante Premium --- */
+.interest-content i {
+    position: absolute;
+    top: -30px;
+    right: 25px;
+    background: linear-gradient(135deg, var(--violet-doux), #8e7dfa); /* Dégradé stylé */
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.3); /* Ombre colorée sous l'icône */
+    transition: transform 0.4s ease;
+}
+
+/* Petite rotation de l'icône au survol */
+.interest-card:hover .interest-content i {
+    transform: rotate(15deg) scale(1.05);
+}
+
+.interest-content h3 {
+    color: var(--gris-tres-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.interest-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    line-height: 1.7; /* Interligne un peu plus grand pour la lisibilité */
+}
